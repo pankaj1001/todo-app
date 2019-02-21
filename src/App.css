@@ -1,0 +1,83 @@
+  .todo-items{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+  }
+  .todo-container{
+    min-height: 100vh;
+    width: 96vw;
+  }
+  input[type="text"]{
+    font-size: 1.1rem;
+    padding: 10px 0;
+    text-indent: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  input[type="search"]{
+    padding: 10px;
+    font-size: 1.1rem;
+    font-family: 'Courier New', Courier, monospace;
+    border: none;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  }
+  #add-todo-btn{
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 4px;
+    display: block;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(132, 0, 255);
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+  }
+  .todo-body{
+    margin: 10px 0;
+  }
+  input[type="checkbox"]{
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+  }
+  .checkbox-text{
+    font-size: 1.2rem;
+    width: 100%;
+    padding-bottom: 5px;
+    vertical-align: text-top;
+  }
+  .search-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  ul{
+    padding: 0;
+    list-style-type: none;
+  }
+  .delete-btn{
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: aliceblue;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid white;
+    background-color: rgb(255, 89, 89);
+  }
+  @media(min-width:768px){
+    .todo-container{
+      width: 50vw;
+    }
+  }
