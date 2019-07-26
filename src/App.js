@@ -13,6 +13,9 @@ class App extends Component {
   componentDidMount(){
     var items=localStorage.getItem("todos");
     var parse=JSON.parse(items)
+    if(parse==null){
+      parse=[{id: "2019-07-26T20:29:39.852Z", task: "First Task", completed: false}];
+    }
     this.setState({
       todos:parse
     })
